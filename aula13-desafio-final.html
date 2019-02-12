@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Testes</title>
+        <meta charset="utf-8">
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Teste</h1>
+       
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> dolor sit amet, <b>consectetur adipisicing</b> elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p> <b>Lorem ipsum </b> </p> 
+
+        </div>
+        
+        <script>
+        
+            var paragrafos = document.querySelectorAll('p');
+            
+            for (var i = 0; i < paragrafos.length; i++){
+                paragrafos[i].innerHTML = formataParagrafo(paragrafos[i].innerHTML);
+            }
+            
+            function formataParagrafo(texto){
+                var arr = texto.split(' ');
+                console.log(arr);
+                
+                if(arr.length > 10){
+                    return arr.slice(0, 10).join(' ') + '...';
+                }
+                
+                return texto;
+            }
+            
+        </script>
+        
+    </body>
+</html>
